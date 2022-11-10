@@ -1,3 +1,3 @@
 # Choose a Price 
 
-GitHub Page:
+GitHub Page: https://angelina207.github.io/price/
