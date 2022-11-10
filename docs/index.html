@@ -15,7 +15,7 @@
 
         <form class="price__checkbox">
             <p class="checkbox-text">Annually</p>
-            <input type="checkbox" id="checkbox" class="checkbox-input">
+            <input type="checkbox" id="checkbox" class="checkbox-input" checked>
             <label for="checkbox" class="checkbox-label"></label>
             <p class="checkbox-text">Monthly</p>
         </form>
@@ -25,7 +25,7 @@
                 <p class="card-title">Basic</p>
                 <div class="card-price">
                     <p class="card-price-sum currency">$</p>
-                    <p class="card-price-sum">19.99</p>
+                    <p class="card-price-sum sum" data-sum="19.99">19.99</p>
                 </div>
                 <div class="card-service">
                     <p class="card-desc">500 GB Storage</p>
@@ -35,11 +35,11 @@
 
                 <button class="card-btn">LEARN MORE</button>
             </div>
-            <div class="card-body">
+            <div class="card-body card-body-active">
                 <p class="card-title">Professional</p>
                 <div class="card-price">
                     <p class="card-price-sum currency">$</p>
-                    <p class="card-price-sum">24.99</p>
+                    <p class="card-price-sum sum" data-sum="24.99">24.99</p>
                 </div>
                 <div class="card-service">
                     <p class="card-desc">1 TB Storage</p>
@@ -53,7 +53,7 @@
                 <p class="card-title">Master</p>
                 <div class="card-price">
                     <p class="card-price-sum currency">$</p>
-                    <p class="card-price-sum">39.99</p>
+                    <p class="card-price-sum sum" data-sum="39.99">39.99</p>
                 </div>
                 <div class="card-service">
                     <p class="card-desc">2 TB Storage</p>
@@ -65,5 +65,6 @@
             </div>
         </div>
     </div>
+    <script src="js/app.min.js" type="module"></script>
 </body>
 </html>
