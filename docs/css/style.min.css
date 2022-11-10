@@ -81,6 +81,7 @@ button {
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   font-family: "Montserrat";
   padding: 0;
@@ -89,6 +90,26 @@ body {
   min-width: 320px;
   width: 100%;
   height: 100%;
+  background-image: url("../img/lines.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 150px -150px;
+}
+@media screen and (min-width: 480px) {
+  body {
+    background-position: 180px -150px;
+  }
+}
+@media screen and (min-width: 580px) {
+  body {
+    background-position: 150% -150px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url("../img/lines.png"), url("../img/lines-sec.png");
+    background-position: 120% -150px, -100px 450px;
+  }
 }
 
 .container {

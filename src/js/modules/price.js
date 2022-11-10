@@ -2,6 +2,7 @@ export function showPrice() {
     (function() {
         const percent = 15;
         const sum = document.querySelectorAll('.sum');
+        
         document.querySelector('.checkbox-input').addEventListener('change', function() {
             !this.checked ? getSumPerYear() : getSumPerMonth()
         })
