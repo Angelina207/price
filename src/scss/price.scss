@@ -1,0 +1,133 @@
+// title
+.price-title{
+    display: flex;
+    justify-content: center;
+    padding: 64px 0 0;
+}
+.title{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #6E728E;
+}
+
+//checkbox
+.price__checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+.checkbox-text{
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #6E728E;
+}
+.checkbox-input{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.checkbox-label{
+    position: relative;
+    width: 56px;
+    height: 32px;
+    border-radius: 16px;
+    margin: 0 24px;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    cursor: pointer;
+    transition: all 250ms ease;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
+    }
+}
+.checkbox-label::before {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 250ms ease;
+}
+.checkbox-input:checked ~ .checkbox-label::before{
+   left: 27px;
+}
+
+.price__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+}
+.card-body{
+    height: auto;
+    width: 100%;
+    min-width: 270px;
+    max-width: 327px;
+    background: #fff;
+    padding: 31px 29px;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+    border-radius: 10px;
+    &:nth-child(even) {
+        margin: 32px 0;
+    }
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #6E728E;
+}
+.card-price{
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+}
+.card-price-sum{
+    color: #4A4D60;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 71px;
+}
+.currency{
+    font-size: 2.5rem;
+}
+.card-service{
+    margin-top: 32px;
+    border-top: 1px solid #DBDCE3FF;
+    border-bottom: 1px solid #DBDCE3FF;
+}
+.card-desc{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #6E728E;
+    padding: 12px 0;
+    &:nth-child(even) {
+        border-top: 1px solid #DBDCE3FF;
+        border-bottom: 1px solid #DBDCE3FF;
+    }
+}
+.card-btn{
+    margin-top: 32px;
+    padding: 14px 0;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: all 250ms ease;
+    &:hover,
+    &:focus {
+        box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
+    }
+}
